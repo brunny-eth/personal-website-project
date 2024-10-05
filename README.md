@@ -8,3 +8,4 @@ i'll also use this README to track progress
 
 #### 10-04-2024
 
+Set up the basic structure of the Jekyll project and imported CSS / index.html from prior set up work

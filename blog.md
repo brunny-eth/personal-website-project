@@ -2,6 +2,14 @@
 layout: default
 title: Blog
 ---
+<h2>Blog Posts</h2>
 
-<h2>Blog</h2>
-<!-- Add your blog posts or a list of posts here -->
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p>{{ post.date | date: "%B %d, %Y" }}</p>
+      <p>{{ post.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul>

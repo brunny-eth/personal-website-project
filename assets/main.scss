@@ -121,3 +121,70 @@ footer .quote {
     color: var(--accent-color);
     margin-top: 10px;
 }
+
+
+.post {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+  
+    h1 {
+      color: var(--header-color);
+    }
+  
+    .post-meta {
+      color: var(--accent-color);
+      font-style: italic;
+    }
+  
+    .post-content {
+      margin-top: 2rem;
+  
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 2rem auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+  
+      figure {
+        margin: 2rem 0;
+  
+        img {
+          margin-bottom: 0.5rem;
+        }
+  
+        figcaption {
+          text-align: center;
+          font-style: italic;
+          color: var(--text-color);
+          opacity: 0.8;
+        }
+      }
+    }
+  
+    .post-navigation {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem;
+  
+      a {
+        color: var(--accent-color);
+        text-decoration: none;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .post-content {
+      img {
+        max-width: 80%;
+      }
+    }
+  }

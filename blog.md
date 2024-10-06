@@ -6,7 +6,7 @@ title: blog and reading recommendations
 <h2>blog and reading recommendations</h2>
 
 <div class="blog-intro">
-  <p>I occassionally share my thoughts on topics like technology, entrepreneurship, Ethereum, and even some quirky topics like aliens. Below, you'll find a collection of my past writings.</p>
+  <p>IThis is a collection of some of my writing, both personal and professional, on topics like technology, entrepreneurship, Ethereum, and even some quirky topics like aliens and the Fermi Paradox.</p>
 </div>
 
 <h2>my latest post</h2>

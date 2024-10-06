@@ -3,5 +3,4 @@ layout: default
 title: Stuff I've Worked On
 ---
 
-<h2>Stuff I've Worked On</h2>
-<!-- Add your content here -->
+<h2>stuff i've worked on</h2>

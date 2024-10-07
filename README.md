@@ -8,6 +8,8 @@ i'll also use this README to track progress
 
 #### 10-07-2024
 
+Added a 'hobbies' page with no content for now; fixed issue with tabs on top of screen being inconsistent across pages.
+
 Added more blog posts to the site, fixed some more styling issues.
 
 #### 10-06-2024

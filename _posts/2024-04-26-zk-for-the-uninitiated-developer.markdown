@@ -2,7 +2,7 @@
 layout: post
 title: "ZK For the Uninitiated Developer"
 date: 2024-04-26 12:00:00 -0400
-categories: [tech, ethereum, startups]
+categories: [tech, ethereum, startups, open-source]
 ---
 
 *(This post was originally featured on [the Pluto website](https://pluto.xyz/blog/zk-for-the-uninitiated-developer))*

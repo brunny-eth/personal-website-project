@@ -6,6 +6,12 @@ i'll be running this on a [Raspberry Pi 4 Model B](https://vilros.com/products/r
 
 i'll also use this README to track progress
 
+#### 10-09-2024
+
+Changed the 'blog and reading recommendations' to just have the blog; added reading recommendation to 'hobbies'. Tried working with Claude to fix a CSS bug but Claude was just making me do overcomplicated stuff so gave up for the night.
+
+(Realized i forgot to update this README yesterday even though i worked on this project)
+
 #### 10-07-2024
 
 Added a 'hobbies' page with no content for now; fixed issue with tabs on top of screen being inconsistent across pages.

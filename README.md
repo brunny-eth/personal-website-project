@@ -6,6 +6,10 @@ i'll be running this on a [Raspberry Pi 4 Model B](https://vilros.com/products/r
 
 i'll also use this README to track progress
 
+#### 10-14-2024
+
+Spent the last few days working on the [slack-rss-bot](https://github.com/brunny-eth/slack-rss-bot) project, which delayed some work on this website project. Still have to make a few changes to rss bot so might take some focus away from here. My intention is to wrap this up in the next couple of weeks. Putting in content now and then will clean up final styling changes (for the time being) once all content is in.
+
 #### 10-09-2024
 
 Changed the 'blog and reading recommendations' to just have the blog; added reading recommendation to 'hobbies'. Tried working with Claude to fix a CSS bug but Claude was just making me do overcomplicated stuff so gave up for the night.

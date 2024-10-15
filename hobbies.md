@@ -7,13 +7,13 @@ title: hobbies
 
 <div class="page-intro">
     <p>I spend most of my time working at <a href="https://pluto.xyz/">Pluto</a> or tinkering on side projects.</p>
-    <p>When I get some free time, I learn more about the world through a curated personal curriculum focused on a weird mix of basic computer science, cryptography, and a bunch of other unrelated topics I find interesting, like longevity, space exploration, and finance.</p>
-    <p>I also like to read, cook (see my <a href="https://faint-smile-2e4.notion.site/Recipes-08b512690f054e58a760e17305632620">running list of recipes</a>), play golf, and hang out with my puppy Manu.</p>
+    <p>When I get some free time, I learn more about the world through a self-curated curriculum focused on a mix of computer science, cryptography, and a bunch of other unrelated topics I find interesting, like longevity, space exploration, and finance.</p>
+    <p>I also like to read, cook (see my <a href="https://faint-smile-2e4.notion.site/Recipes-08b512690f054e58a760e17305632620">running list of recipes</a>), play golf, and hang out with my family, friends, and dog.</p>
 </div>
 
 ## Personal curriculum
 
-I try to spend at least a few hours a week going through materials from high-quality educational courses. These are some of the best materials I've gone through on my personal learning journey:
+I spend at least a few hours a week going through materials from high-quality educational courses. Here are some of the best materials I've gone through recently:
 
 - [Harvard's CS50 course](https://www.youtube.com/watch?v=LfaMVlDaQ24&t=2649s)
 - [Tim Roughgarden's Foundation of Blockchains course](https://www.youtube.com/watch?v=KNJGPI0fuFA&list=PLEGCF-WLh2RLOHv_xUGLqRts_9JxrckiA)
@@ -98,4 +98,4 @@ I love experimenting in the kitchen. Check out my [running list of recipes](http
 
 When the weather permits, you can find me on the golf course. Golf has a bad reputation as an elitist country club sport. That can sometimes be true (depends where you play!). 
 
-But golf also pushes me to be outside in nature, with a few friends and my phone away in my bag, unplugged from the rest of the world and focused solely on getting the little white ball into the hole in as few strokes as possible. It's a mental and physical challenge and it takes tons of discipline to get good at golf (I am still working on getting 'good' at golf). 
+But golf also pushes me to be outside in nature, with a few friends and my phone away, unplugged from the rest of the world and focused solely on getting the little white ball into the hole in as few strokes as possible. It's a mental and physical challenge and it takes tons of discipline to get good at golf (I am still working on getting 'good' at golf). 

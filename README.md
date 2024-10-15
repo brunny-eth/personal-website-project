@@ -6,6 +6,11 @@ i'll be running this on a [Raspberry Pi 4 Model B](https://vilros.com/products/r
 
 i'll also use this README to track progress
 
+
+#### 10-15-2024
+
+Finished initial draft of blog.md, hobbies.md, and got to work on stuff-ive-worked-on.md. 
+
 #### 10-14-2024
 
 Spent the last few days working on the [slack-rss-bot](https://github.com/brunny-eth/slack-rss-bot) project, which delayed some work on this website project. Still have to make a few changes to rss bot so might take some focus away from here. My intention is to wrap this up in the next couple of weeks. Putting in content now and then will clean up final styling changes (for the time being) once all content is in.

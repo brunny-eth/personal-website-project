@@ -6,7 +6,7 @@ title: blog and reading recommendations
 <h2>blog</h2>
 
 <div class="page-intro">
-  <p>This is a collection of some of my writing, both personal and professional, on topics like technology, entrepreneurship, Ethereum, and even topics like aliens and the Fermi Paradox.</p>
+  <p>This is a collection of some of my personal and professional writing. Some of the topics I've written about: technology, entrepreneurship, Ethereum, and the Fermi Paradox.</p>
 </div>
 
 <h2>my latest post</h2>

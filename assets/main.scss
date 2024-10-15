@@ -180,6 +180,32 @@ footer {
   }
 }
 
+.project-list {
+    margin-top: 2rem;
+}
+
+.project-item {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.project-item:last-child {
+    border-bottom: none;
+}
+
+.project-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+.project-item p {
+    margin-bottom: 0.5rem;
+}
+
+.project-item ul {
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
 
 main {
   flex: 1 0 auto;

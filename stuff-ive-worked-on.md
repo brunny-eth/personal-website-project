@@ -16,20 +16,16 @@ title: Stuff I've Worked On
         <p><strong>Link:</strong> <a href="https://github.com/brunny-eth/slack-rss-bot">Github repo</a></p>
     </div>
 
-<div class="project-list">
-    <div class="project-item">
-        <h3>Personal Website</h3>
-        <p><strong>Technology Stack:</strong> HTML, CSS, Jekyll, Raspberry Pi Model 4</p>
-        <p><strong>Description:</strong> Small hobby project to build a personal website from scratch and host it on a Raspberry Pi.</p>
-        <p><strong>Link:</strong> <a href="https://github.com/brunny-eth/personal-website-project">Github repo</a></p>
-    </div>
-    
-<div class="project-list">
-    <div class="project-item">
+<div class="project-item">
         <h3>Personal Website</h3>
         <p><strong>Technology Stack:</strong> HTML, CSS, Jekyll, Raspberry Pi Model 4</p>
         <p><strong>Description:</strong> Small hobby project to build a personal website from scratch and host it on a Raspberry Pi.</p>
         <p><strong>Link:</strong> <a href="https://github.com/brunny-eth/personal-website-project">Github repo</a></p>
     </div>
 
-</div>
+<div class="project-item">
+        <h3>Personal Website</h3>
+        <p><strong>Technology Stack:</strong> HTML, CSS, Jekyll, Raspberry Pi Model 4</p>
+        <p><strong>Description:</strong> Small hobby project to build a personal website from scratch and host it on a Raspberry Pi.</p>
+        <p><strong>Link:</strong> <a href="https://github.com/brunny-eth/personal-website-project">Github repo</a></p>
+    </div>

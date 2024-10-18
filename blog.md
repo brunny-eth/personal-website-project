@@ -1,9 +1,10 @@
 ---
 layout: default
-title: blog and reading recommendations
+title: Blog
+permalink: /blog/
 ---
 
-<h2>blog</h2>
+<h2>Blog</h2>
 
 <div class="page-intro">
   <p>This is a collection of some of my personal and professional writing. Some of the topics I've written about: technology, entrepreneurship, Ethereum, and the Fermi Paradox.</p>

@@ -1,9 +1,10 @@
 ---
 layout: default
 title: hobbies
+permalink: /hobbies/
 ---
 
-<h2>hobbies</h2>
+<h2>Hobbies</h2>
 
 <div class="page-intro">
     <p>I spend most of my time working at <a href="https://pluto.xyz/">Pluto</a> or tinkering on side projects.</p>
@@ -16,6 +17,7 @@ title: hobbies
 I spend at least a few hours a week going through materials from high-quality educational courses. Here are some of the best materials I've gone through recently:
 
 - [Harvard's CS50 course](https://www.youtube.com/watch?v=LfaMVlDaQ24&t=2649s)
+- [ZK Whiteboard Sessions](https://www.youtube.com/watch?v=h-94UhJLeck&list=PLj80z0cJm8QErn3akRcqvxUsyXWC81OGq)
 - [Tim Roughgarden's Foundation of Blockchains course](https://www.youtube.com/watch?v=KNJGPI0fuFA&list=PLEGCF-WLh2RLOHv_xUGLqRts_9JxrckiA)
 
 ## Reading
@@ -88,7 +90,6 @@ And here are some books that often appear on "Must Read" lists, but that I don't
 </div>
 
 A mostly-full list of every book I've read in the last few years is [here](https://faint-smile-2e4.notion.site/Books-2017d1aa577c403ca79ba0914342fa90?pvs=4).
-
 
 ## Cooking
 

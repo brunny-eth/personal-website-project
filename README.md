@@ -1,4 +1,4 @@
-## Personal website project
+`## Personal website project
 
 this is a hobby project to build a personal website from scratch and host it on a Raspberry Pi. 
 
@@ -6,6 +6,15 @@ i'll be running this on a [Raspberry Pi 4 Model B](https://vilros.com/products/r
 
 i'll also use this README to track progress
 
+#### 10-18-2024
+
+Have spent a few days now figuring out how to get this thing hosted on my Raspberry Pi. I ran into all sorts of trouble, like my ISP has dynamic IPs, so i had to potentially set up duckdns, but then it turns out Squarespace (where i bought my domain from and was planning on just using to set up the routing towards my Pi) doesnt allow dynamic DNS services like DuckDNS, AND my ISP doesnt allow for port forwarding bc of something to do with fiber? 
+
+Lots of troubleshooting but I'm finally up. Had to make some changes to Jekyll builds and stylistic changes to pages to get them to work. 
+
+#### 10-16-2024
+
+Finished all initial content on the website, preparing site to be served via Raspberry Pi and connecting to domain.  
 
 #### 10-15-2024
 

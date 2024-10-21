@@ -1,4 +1,4 @@
-`## Personal website project
+## Personal website project
 
 this is a hobby project to build a personal website from scratch and host it on a Raspberry Pi. 
 

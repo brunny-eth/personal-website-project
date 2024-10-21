@@ -24,6 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   this is a hobby project to build a personal website from scratch and host it on a Raspberry Pi. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://blulinski.com" 
+permalink: /:categories/:year/:month/:day/:title/
 twitter_username: zkbrunny
 github_username:  brunny-eth
 sass:

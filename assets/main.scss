@@ -196,6 +196,56 @@ nav {
     }
 }
 
+details {
+    margin-bottom: 1rem;
+    
+    &[open] {
+        padding-bottom: 1rem;
+    }
+}
+
+summary {
+    cursor: pointer;
+    position: relative;
+    font-weight: 600;
+    color: var(--header-color);
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    list-style: none;
+    display: inline-block;  
+    padding-right: 1.5em;   
+    
+    &::-webkit-details-marker {
+        display: none;
+    }
+    
+    &::after {
+        content: '▼';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%) rotate(0);
+        transition: transform 0.2s ease;
+        font-size: 0.8em;
+    }
+}
+
+details[open] summary::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.details-content {
+    padding-left: 0.5rem;
+}
+
+details .book-list {
+    margin-top: 1rem;
+}
+
+details .book-item:last-child {
+    margin-bottom: 0;
+}
+
 .project-list {
     margin-top: 2rem;
 }
@@ -222,6 +272,7 @@ nav {
         margin-bottom: 0.5rem;
     }
 }
+
 
 // 404 page styles
 

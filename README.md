@@ -6,6 +6,10 @@ i'll be running this on a [Raspberry Pi 4 Model B](https://vilros.com/products/r
 
 i'll also use this README to track progress
 
+#### 10-22-2024
+
+Made slightly more mobile-friendly, plus had to mess around with Cloudflare settings to get https going. 
+
 #### 10-21-2024
 
 Made some styling changes to Hobbies and ProjectsIveWorkedOn, adding toggles. 

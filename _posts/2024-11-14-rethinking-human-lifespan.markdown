@@ -15,7 +15,7 @@ We lose great minds before their work is done. Another few decades of Einstein c
 
 Beyond the loss of individual life, our lifespans distort the very incentives that drive human progress. The challenges we face as a species - climate change, space exploration, preventing pandemics - require planning and sacrifice across decades. But when the average person won't live to see 2100, long-term thinking becomes nearly impossible. Why make hard sacrifices for distant challenges? Why invest in revolutionary but slow-moving scientific research? Our current lifespans restrict our collective ability to think and plan for the long-term.
 
-So if we *can* extend both lifespan and healthspan - the years we live without the burden of major health issues - we should! We should strive to extend far past an 100-year average lifespan, and keep pushing indefinitely. Imagine a world where 150 vibrant and fulfilling years of life is the norm, where our final decades are filled with energy, curiosity, purpose, and meaning.
+So if we *can* extend both lifespan and healthspan - the years we live without the burden of major health issues - we should! We should strive to extend far past an 100-year average lifespan, and keep pushing indefinitely. Imagine a world where 150 vibrant and fulfilling years is the norm, where our final decades are filled with energy, curiosity, purpose, and meaning.
 
 And yet, there are those who believe we shouldn't pursue this goal at all.
 

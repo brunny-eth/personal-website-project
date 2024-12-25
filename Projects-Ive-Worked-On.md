@@ -32,6 +32,13 @@ permalink: /projects-ive-worked-on/
 <details>
     <summary>Personal</summary>
     <div class="details-content">
+            <div class="project-item">
+            <h3>Fitness and Nutrition Tracker</h3>
+            <p><strong>Technology Stack:</strong> Python (Flask), SQLite3, Anthropic API</p>
+            <p><strong>Description:</strong> A web app for tracking fitness and nutrition goals, including protein intake, calorie tracking, and workout logging. Features include personalized protein goals, meal logging with Claude AI integration, workout tracking with progress visualization, and custom exercise categories.</p>
+            <p><strong>Link:</strong> <a href="https://github.com/brunny-eth/fitness-tracker">Github repo</a></p>
+        </div>
+
         <div class="project-item">  
             <h3>Slack RSS bot</h3>
             <p><strong>Technology Stack:</strong> Python, RSS feeds, Slack</p>

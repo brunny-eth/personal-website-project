@@ -31,25 +31,29 @@ permalink: /projects-ive-worked-on/
 
 <details>
     <summary>Personal</summary>
-    <div class="details-content">
-            <div class="project-item">
-            <h3>Fitness and Nutrition Tracker</h3>
-            <p><strong>Technology Stack:</strong> Python (Flask), SQLite3, Anthropic API</p>
-            <p><strong>Description:</strong> A web app for tracking fitness and nutrition goals, including protein intake, calorie tracking, and workout logging. Features include personalized protein goals, meal logging with Claude AI integration, workout tracking with progress visualization, and custom exercise categories.</p>
-            <p><strong>Link:</strong> <a href="https://github.com/brunny-eth/fitness-tracker">Github repo</a></p>
+        <div class="project-item">
+            <h3>Fitness Tracker</h3>
+            <p><strong>Technology Stack:</strong> React, Node.js, and MongoDB</p>
+            <p><strong>Description:</strong> A web app for tracking fitness and nutrition goals. Get personalized protein goals, meal logging with Claude integration, workout tracking with progress visualization, and custom exercise categories for easy logging.</p>
+            <p><strong>Links:</strong> <a href="https://github.com/brunny-eth/fitness-tracker">Github repo</a> | <a href="https://fitness-tracker.me">Live website</a></p>
         </div>
 
-        <div class="project-item">  
-            <h3>Slack RSS bot</h3>
-            <p><strong>Technology Stack:</strong> Python, RSS feeds, Slack</p>
-            <p><strong>Description:</strong> Created a custom Slack bot that grabs multiple RSS feeds, creates a new daily thread in a shared Slack channel, and posts the output of the RSS feeds into a single thread.</p>
-            <p><strong>Link:</strong> <a href="https://github.com/brunny-eth/slack-rss-bot">Github repo</a></p>
-        </div>
+    <div class="project-item">
+        <h3>Custom Slack Bots</h3>
+        <p><strong>Technology Stack:</strong> Node.js, Python, Slack API, Notion API, Vercel</p>
+        <p><strong>Description:</strong> A couple of purpose-built Slack bots built as a side project for quality-of-life improvements for the Pluto team:
+        <ul>
+            <li><strong>Helper Bot:</strong> Captures feature requests and BD inbound from Slack threads and syncs them to Notion. Preserves thread context, supports status updates directly from Slack, and uses simple commands to track request statuses.</li>
+            <li><strong>RSS Bot:</strong> Grabs multiple RSS feeds, creates a new daily thread in a shared Slack channel, and posts the output into a single thread for easy collection and viewing.</li>
+        </ul>
+        </p>
+        <p><strong>Links:</strong> <a href="https://github.com/brunny-eth/helper-bot">Helper Bot</a> | <a href="https://github.com/brunny-eth/slack-rss-bot">RSS Bot</a></p>
+    </div>
 
         <div class="project-item">
             <h3>Personal Website</h3>
             <p><strong>Technology Stack:</strong> HTML, CSS, Jekyll, Raspberry Pi Model 4</p>
-                <p><strong>Description:</strong> Small hobby project to build a personal website (<em>this</em> personal website) from scratch and host it on a Raspberry Pi.</p>       
+                <p><strong>Description:</strong> Small hobby project to build a personal website (<em>this</em> personal website) from scratch and host it on a Raspberry Pi. Raspberry Pi fan noise was driving the wife crazy, so now it's hosted on Vercel. </p>       
             <p><strong>Link:</strong> <a href="https://github.com/brunny-eth/personal-website-project">Github repo</a></p>
         </div>
     </div>

@@ -287,7 +287,6 @@ a {
     }
 }
 
-// hobbies page
 .cooking-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -295,9 +294,15 @@ a {
     margin: 2rem 0;
 }
 
+.cooking-item {
+    display: flex;
+    flex-direction: column;
+}
+
 .cooking-item img {
     width: 100%;
-    height: auto;
+    height: 350px; 
+    object-fit: cover; 
     border-radius: 8px;
 }
 
@@ -324,46 +329,71 @@ footer {
 }
 
 // book-styling
-.book-item {
-    padding: 1rem;  
-    margin-bottom: 1.5rem;  
-    border-left: 3px solid var(--accent-color);  
-    background-color: rgba(23, 162, 184, 0.05);
-
-    &:last-child {
-        margin-bottom: 1rem;
-    }
-
-    h4 {
-        margin: 0 0 0.75rem 0;  
-        font-size: 1.1rem;  
-        color: var(--header-color);
-    }
-
-    &.not-recommended {
-        border-left-color: var(--overrated-color);
-        background-color: rgba(255, 107, 107, 0.05);
-    }
-}
-
-.book-meta {
-    margin: 0.75rem 0;  
-    padding-bottom: 0.75rem;
-    border-bottom: 1px solid #e0e0e0;
-    font-size: 0.95em;  
-
-    &:last-child {
-        border-bottom: none;
-    }
-}
-
-.rating {
+/* Book styling - card-based approach */
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+  
+  .book-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+  
+  .book-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-header {
+    padding: 1.2rem 1.5rem;
+    background-color: var(--accent-color);
+    color: white;
+    min-height: 50px; 
+    display: flex;
+    align-items: center;
+  }
+  
+  .book-header h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.4;
+  }
+  
+  .book-item.not-recommended .book-header {
+    background-color: var(--overrated-color);
+  }
+  
+  .book-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+  }
+  
+  .book-meta {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .book-meta:last-of-type {
+    margin-bottom: 1.5rem;
+  }
+  
+  .rating {
     font-weight: 600;
-    margin: 0.75rem 0 0;  
-    padding-bottom: 0;  
-    border-bottom: none;  
-    font-size: 0.95em;  
-}
+    padding: 0.5rem 1.5rem;
+    background-color: #f8f9fa;
+    border-top: 1px solid #eaeaea;
+    font-size: 0.95rem;
+  }
 
 // responsive
 @media (max-width: 768px) {

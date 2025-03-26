@@ -15,7 +15,7 @@ permalink: /projects-ive-worked-on/
     <div class="details-content">
         <div class="project-item">
             <h3>Pluto</h3>
-            <p><strong>Description:</strong> Pluto is building applied cryptography developer tooling for application developers. Our first product is a Web Proofs SDK that enables application developers to incorporate 'Proofs of Web Activity' into their onchain applications. Web Proofs combine powerful cryptography like client-side proving and zero-knowledge proofs to unlock verifiable access to existing data sources on the Internet, like data that comes from Uber, Shopify, banking providers, attested sensors, e-mail clients, or any other internet server.</p>
+            <p><strong>Description:</strong> Pluto is building applied cryptography developer tooling for application developers. Our first product is a Web Proofs SDK that enables application developers to incorporate 'Proofs of Web Activity' into their applications. Web Proofs unlock verifiable access to existing data sources on the Internet, like data that comes from Uber, Shopify, banking providers, attested sensors, e-mail clients, or any other internet server.</p>
             <p>I am the Chief Operating Officer at Pluto.</p>
             <p><strong>Links:</strong> <a href="https://github.com/pluto?view_as=public">Pluto Github</a> | <a href="https://pluto.xyz">Pluto Website</a></p>
         </div>    
@@ -56,5 +56,4 @@ permalink: /projects-ive-worked-on/
                 <p><strong>Description:</strong> Small hobby project to build a personal website (<em>this</em> personal website) from scratch and host it on a Raspberry Pi. Raspberry Pi fan noise was driving the wife crazy, so now it's hosted on Vercel. </p>       
             <p><strong>Link:</strong> <a href="https://github.com/brunny-eth/personal-website-project">Github repo</a></p>
         </div>
-    </div>
 </details>

@@ -122,6 +122,14 @@ header {
     }
 }
 
+// Site title container
+.site-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 // Menu toggle for mobile
 .menu-toggle {
     display: none;
@@ -165,6 +173,8 @@ main {
     margin: 0 0 3rem;  
     padding-bottom: 2rem; 
     border-bottom: 1px solid #e0e0e0;
+    font-size: 1.1em;
+    max-width: 38em;
 }
 
 .post-list {
@@ -231,7 +241,6 @@ nav a {
 }
 
 // details element styling
-/* Enhanced details/summary styling */
 details {
     margin: 2rem 0;
     border-radius: 8px;
@@ -286,14 +295,14 @@ details {
         transform: rotate(90deg);
       }
     }
-  }
+}
   
-  .details-content {
+.details-content {
     padding: 1.5rem 1.5rem;
-  }
+}
   
-  /* Project items inside details */
-  .project-item {
+// Project items inside details
+.project-item {
     margin-bottom: 2.5rem;
     padding-bottom: 2.5rem;
     border-bottom: 1px solid #e0e0e0;
@@ -310,7 +319,7 @@ details {
       padding-bottom: 0.5rem;
       border-bottom: 2px solid rgba(23, 162, 184, 0.1);
     }
-  }
+}
 
 // links
 a {
@@ -325,12 +334,6 @@ a {
 }
 
 // page specific
-.page-intro {
-    margin: 0 0 2rem;
-    font-size: 1.1em;
-    max-width: 38em;
-}
-
 .project-section, .hobby-section {
     margin: 2rem 0;
 
@@ -339,6 +342,7 @@ a {
     }
 }
 
+// Cooking gallery
 .cooking-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -381,15 +385,14 @@ footer {
 }
 
 // book-styling
-/* Book styling - card-based approach */
 .book-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1.5rem;
     margin: 2rem 0;
-  }
+}
   
-  .book-item {
+.book-item {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
@@ -398,54 +401,54 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: white;
-  }
+}
   
-  .book-item:hover {
+.book-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-  }
+}
   
-  .book-header {
+.book-header {
     padding: 1.2rem 1.5rem;
     background-color: var(--accent-color);
     color: white;
     min-height: 50px; 
     display: flex;
     align-items: center;
-  }
+}
   
-  .book-header h4 {
+.book-header h4 {
     margin: 0;
     font-size: 1.2rem;
     color: white;
     line-height: 1.4;
-  }
+}
   
-  .book-item.not-recommended .book-header {
+.book-item.not-recommended .book-header {
     background-color: var(--overrated-color);
-  }
+}
   
-  .book-content {
+.book-content {
     padding: 1.5rem;
     flex-grow: 1;
-  }
+}
   
-  .book-meta {
+.book-meta {
     margin-bottom: 1rem;
     font-size: 0.95rem;
-  }
+}
   
-  .book-meta:last-of-type {
+.book-meta:last-of-type {
     margin-bottom: 1.5rem;
-  }
+}
   
-  .rating {
+.rating {
     font-weight: 600;
     padding: 0.5rem 1.5rem;
     background-color: #f8f9fa;
     border-top: 1px solid #eaeaea;
     font-size: 0.95rem;
-  }
+}
 
 // responsive
 @media (max-width: 768px) {
@@ -458,14 +461,16 @@ footer {
     }
     
     .header-content {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: center;
+        padding: 0.5rem 1rem;
     }
     
     .title-nav {
         width: 100%;
         display: flex;
         flex-direction: column;
+        flex: 1;
     }
     
     nav {
@@ -481,8 +486,10 @@ footer {
     }
     
     #brunny-eth-image {
-        margin-top: 1rem;
-        align-self: center;
+        max-width: 50px;
+        margin-left: auto;
+        position: relative;
+        z-index: 5;
     }
     
     .cooking-gallery {
@@ -511,6 +518,18 @@ footer {
     .header-content h1 {
         font-size: 1.4rem;
     }
+    
+    /* Page intro spacing */
+    .page-intro {
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    /* Fix blog items */
+    .post-list li {
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -531,11 +550,13 @@ footer {
     }
     
     .post-list h3 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        line-height: 1.4;
     }
     
     .menu-toggle {
         display: flex;
+        margin-left: 0.5rem;
     }
     
     .title-nav {
@@ -552,6 +573,9 @@ footer {
         
         &.show {
             display: block;
+            margin-top: 0.5rem;
+            padding: 0.5rem 0;
+            border-top: 1px solid rgba(255,255,255,0.1);
         }
         
         ul {
@@ -561,5 +585,30 @@ footer {
             justify-content: space-between;
             width: 100%;
         }
+    }
+    
+    /* Improve details and summary on mobile */
+    details {
+        margin: 1.5rem 0;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    details > summary {
+        padding: 0.75rem 1rem;
+    }
+    
+    /* Make cooking gallery better on mobile */
+    .cooking-gallery {
+        grid-template-columns: 1fr;
+    }
+    
+    .cooking-item img {
+        height: 220px;
+    }
+    
+    /* Ensure book items display properly */
+    .book-list {
+        gap: 1rem;
     }
 }

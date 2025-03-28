@@ -131,38 +131,32 @@ header {
 
 .mobile-header {
     display: flex;
-    width: 100%;
-    justify-content: center;
     align-items: center;
-    position: relative;
+    width: 100%;
 }
+
 
 // Menu toggle for mobile
 .menu-toggle {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
     display: none;
     background: transparent;
     border: none;
     cursor: pointer;
-    padding: 0;
-    width: 30px;
-    height: 24px;
+    padding: 10px;
+    width: 44px;
+    height: 44px;
     flex-direction: column;
     justify-content: space-between;
-    z-index: 10;
-    margin: 0;
+    margin-right: 15px;
 }
 
 .menu-toggle .bar {
     display: block;
     height: 3px;
-    width: 100%;
+    width: 24px;
     background-color: white;
     border-radius: 2px;
-    transition: all 0.3s ease-in-out;
+    margin: 3px 0;
 }
 
 main {
@@ -564,20 +558,19 @@ footer {
         
         &.show {
             display: block;
-            margin-top: 0.75rem;
-            padding: 0.5rem 0;
             border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 10px;
+            padding-top: 10px;
         }
         
         ul {
             flex-direction: column;
-            gap: 0.5rem;
-            margin-top: 0.5rem;
             width: 100%;
         }
         
         li {
-            padding: 0.25rem 0;
+            margin: 5px 0;
+            padding: 5px 0;
             border-bottom: 1px solid rgba(255,255,255,0.05);
         }
         

@@ -10,23 +10,22 @@
 <body>
     <header>
         <div class="header-content">
-            <div class="title-nav">
-                <div class="mobile-header">
-                    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </button>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
-                        <li><a href="{{ '/projects-ive-worked-on' | relative_url }}" {% if page.url == '/projects-ive-worked-on' %}class="active"{% endif %}>Projects</a></li>
-                        <li><a href="{{ '/blog' | relative_url }}" {% if page.url == '/blog' %}class="active"{% endif %}>Blog</a></li>
-                        <li><a href="{{ '/hobbies' | relative_url }}" {% if page.url == '/hobbies' %}class="active"{% endif %}>Hobbies</a></li>
-                    </ul>
-                </nav>
+            <div class="mobile-header">
+                <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <h1>brunny.eth</h1>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
+                    <li><a href="{{ '/projects-ive-worked-on' | relative_url }}" {% if page.url == '/projects-ive-worked-on' %}class="active"{% endif %}>Projects</a></li>
+                    <li><a href="{{ '/blog' | relative_url }}" {% if page.url == '/blog' %}class="active"{% endif %}>Blog</a></li>
+                    <li><a href="{{ '/hobbies' | relative_url }}" {% if page.url == '/hobbies' %}class="active"{% endif %}>Hobbies</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 

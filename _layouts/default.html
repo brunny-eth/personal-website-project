@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <title>brunny.eth</title>
     <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
     <link href="https://fonts.googleapis.com/css2?family=Hahmlet&display=swap" rel="stylesheet">
@@ -12,6 +12,11 @@
         <div class="header-content">
             <div class="title-nav">
                 <h1>brunny.eth</h1>
+                <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
                 <nav>
                     <ul>
                         <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
@@ -33,5 +38,18 @@
         <p>© 2025 brunny.eth</p>
         <p class="quote">The ultimate fate of all intelligent beings has always been to become as grand as their thoughts. - Cixin Liu</p>
     </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const nav = document.querySelector('nav');
+            
+            if (menuToggle && nav) {
+                menuToggle.addEventListener('click', function() {
+                    nav.classList.toggle('show');
+                });
+            }
+        });
+    </script>
 </body>
 </html>

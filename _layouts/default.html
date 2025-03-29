@@ -40,16 +40,31 @@
     
     <script>
             document.addEventListener('DOMContentLoaded', function() {
-            const menuToggle = document.getElementById('menu-toggle');
-            const nav = document.querySelector('nav');
-            
-            if (menuToggle && nav) {
-                menuToggle.addEventListener('click', function() {
-                    nav.classList.toggle('show');
-                    menuToggle.classList.toggle('active');
-                });
-            }
-        });
+                const menuToggle = document.getElementById('menu-toggle');
+                const nav = document.querySelector('nav');
+                
+                if (menuToggle && nav) {
+                    // Toggle menu when hamburger is clicked
+                    menuToggle.addEventListener('click', function(e) {
+                        e.stopPropagation(); // Prevent click from immediately closing
+                        nav.classList.toggle('show');
+                    });
+                    
+                    // Close menu when clicking anywhere else on the page
+                    document.addEventListener('click', function(e) {
+                        if (nav.classList.contains('show') && 
+                            !nav.contains(e.target) && 
+                            e.target !== menuToggle) {
+                            nav.classList.remove('show');
+                        }
+                    });
+                    
+                    // Prevent clicks on the menu itself from closing it
+                    nav.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                    });
+                }
+            });
     </script>
 </body>
 </html>

@@ -588,76 +588,117 @@ footer {
         line-height: 1.4;
     }
     
+    /* Improved hamburger menu */
     .menu-toggle {
         display: flex;
-        order: 2; 
+        order: 2;
         margin: 0;
+        z-index: 100;
     }
     
     .header-content {
         flex-direction: column;
         align-items: flex-start;
+        position: relative;
+        width: 100%;
     }
     
     .mobile-header {
-        position: static;
+        position: relative;
         width: 100%;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
-
+    
     .mobile-header h1 {
-        order: 1; 
+        order: 1;
         margin: 0;
     }
     
+    /* Full-width navigation styling */
     nav {
         display: none;
         width: 100%;
-        position: static; 
+        position: absolute;
+        left: 0;
+        top: 100%;
         margin: 0;
-        padding-left: 0;
-        
-        &.show {
-            display: block;
-            border-top: 1px solid rgba(255,255,255,0.15);
-            margin-top: 15px;
-            padding-top: 10px;
-        }
-        
-        ul {
-            flex-direction: column;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        
-        li {
-            margin: 0;
-            padding: 0;
-            border-bottom: 1px solid rgba(255,255,255,0.15);
-        }
-        
-        li:last-child {
-            border-bottom: none;
-        }
-        
-        a {
-            display: block;
-            align-items: center;
-            justify-content: flex-start;
-            min-height: unset;
-            padding: 12px 15px;
-            font-size: 1.1rem;
-        }
-        
-        a::after, a:hover::after, a.active::after {
-            display: none;
-        }
-        
-        a:hover, a.active {
-            background-color: rgba(255,255,255,0.05);
-        }
+        padding: 0;
+        background-color: rgba(52, 58, 64, 0.95); 
+        backdrop-filter: blur(4px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+        z-index: 50;
+        border-radius: 0 0 8px 8px; 
+    }
+    
+    nav.show {
+        display: block;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        animation: fadeIn 0.2s ease-in-out; 
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 8px 0;
+    }
+    
+    nav li {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06); 
+    }
+    
+    nav li:last-child {
+        border-bottom: none;
+    }
+    
+    nav a {
+        display: block;
+        width: 100%;
+        padding: 14px 20px; 
+        font-size: 1.1rem;
+        text-align: left;
+        justify-content: flex-start;
+        min-height: unset;
+        transition: all 0.2s ease;
+        letter-spacing: 0.02em; 
+    }
+    
+    nav a::after, nav a:hover::after, nav a.active::after {
+        display: none;
+    }
+    
+    nav a:hover, nav a.active {
+        background-color: var(--accent-color); 
+        color: white;
+        padding-left: 25px; 
+    }
+    
+    /* Remove X transformation from hamburger */
+    .menu-toggle .bar {
+        transition: all 0.3s ease;
+    }
+    
+    /* Keep hamburger state for visibility */
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: none;
+    }
+    
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 1;
+    }
+    
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: none;
     }
     
     details {
@@ -682,18 +723,5 @@ footer {
     /* Ensure book items display properly */
     .book-list {
         gap: 1rem;
-    }
-
-    /* X animation for hamburger */
-    .menu-toggle.active .bar:nth-child(1) {
-        transform: translateY(6px) rotate(45deg);
-    }
-
-    .menu-toggle.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .menu-toggle.active .bar:nth-child(3) {
-        transform: translateY(-6px) rotate(-45deg);
     }
 }

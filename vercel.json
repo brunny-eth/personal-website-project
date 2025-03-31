@@ -6,9 +6,4 @@
   },
   "buildCommand": "npm install && bundle install && bundle exec jekyll build",
   "outputDirectory": "_site",
-  "functions": {
-    "api/**/*.js": {
-      "runtime": "nodejs16"
-    }
-  }
 }

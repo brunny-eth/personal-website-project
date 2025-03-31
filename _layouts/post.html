@@ -23,20 +23,22 @@ layout: default
     <h3>Enjoyed this post?</h3>
     <p>Subscribe to be notified when I publish something new.</p>
     
-    <form id="subscription-form">
-      <input type="email" id="email-input" placeholder="Your email address" required>
+    <form id="post-subscription-form">
+      <input type="email" id="post-email" name="email" placeholder="Your email address" required>
       <button type="submit">Subscribe</button>
-      <div id="subscription-message" class="message"></div>
     </form>
-
+    
+    <div id="post-subscription-message" class="subscription-message"></div>
+  
     <script>
-      document.getElementById('subscription-form').addEventListener('submit', async function(e) {
+      document.getElementById('post-subscription-form').addEventListener('submit', async function(e) {
         e.preventDefault();
         
-        const email = document.getElementById('email-input').value;
-        const messageEl = document.getElementById('subscription-message');
+        const email = document.getElementById('post-email').value;
+        const messageEl = document.getElementById('post-subscription-message');
         
         messageEl.textContent = 'Processing...';
+        messageEl.className = 'subscription-message visible';
         
         try {
           const response = await fetch('/api/subscribe', {
@@ -49,15 +51,15 @@ layout: default
           
           if (response.ok) {
             messageEl.textContent = data.message || 'Subscribed successfully!';
-            messageEl.className = 'message success';
-            document.getElementById('email-input').value = '';
+            messageEl.className = 'subscription-message success visible';
+            document.getElementById('post-email').value = '';
           } else {
             messageEl.textContent = data.error || 'Error subscribing. Please try again.';
-            messageEl.className = 'message error';
+            messageEl.className = 'subscription-message error visible';
           }
         } catch (error) {
           messageEl.textContent = 'Error connecting to server. Please try again.';
-          messageEl.className = 'message error';
+          messageEl.className = 'subscription-message error visible';
         }
       });
     </script>

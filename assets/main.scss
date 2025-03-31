@@ -500,83 +500,108 @@ footer {
     font-size: 0.95rem;
 }
 
-.subscription-form {
-    background-color: #f8f9fa;
-    padding: 1.5rem;
-    border-radius: 8px;
-    margin: 2rem 0;
-    border: 1px solid #eaeaea;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+/* Container for subscription form with proper boundaries */
+.subscription-container {
+    margin: 2.5rem 0;
+    padding: 0;
+    position: relative;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
   }
   
-.subscription-form h3 {
-margin-top: 0;
-font-size: 1.3rem;
-color: var(--header-color);
-margin-bottom: 0.5rem;
-}
-
-.subscription-form p {
-margin-bottom: 1rem;
-font-size: 0.95rem;
-}
-
-#subscription-form {
-display: flex;
-flex-wrap: wrap;
-gap: 0.75rem;
-align-items: center;
-}
-
-#email-input {
-flex: 1;
-min-width: 200px;
-padding: 0.75rem 1rem;
-border: 1px solid #ddd;
-border-radius: 4px;
-font-size: 1rem;
-}
-
-#subscription-form button {
-padding: 0.75rem 1.25rem;
-background-color: var(--accent-color);
-color: white;
-border: none;
-border-radius: 4px;
-font-size: 1rem;
-cursor: pointer;
-transition: background-color 0.2s;
-min-height: 44px;
-}
-
-#subscription-form button:hover {
-background-color: var(--accent-color-dark);
-}
-
-.message {
-width: 100%;
-padding: 0.75rem;
-border-radius: 4px;
-font-size: 0.9rem;
-margin-top: 0.5rem;
-display: none;
-}
-
-.message:not(:empty) {
-display: block;
-}
-
-.message.success {
-background-color: #d4edda;
-color: #155724;
-}
-
-.message.error {
-background-color: #f8d7da;
-color: #721c24;
-}
+  /* Subscription form styling */
+  .subscription-form {
+    background-color: white;
+    padding: 2rem 0;
+    margin: 0;
+  }
   
-
+  .subscription-form h3 {
+    font-size: 1.3rem;
+    margin: 0 0 0.5rem 0;
+    color: var(--header-color);
+  }
+  
+  .subscription-form p {
+    margin: 0 0 1.25rem 0;
+    font-size: 0.95rem;
+    color: #666;
+  }
+  
+  .subscription-form form {
+    display: flex;
+    gap: 0.75rem;
+    max-width: 500px;
+  }
+  
+  .subscription-form input[type="email"] {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    color: var(--text-color);
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .subscription-form input[type="email"]:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(23, 162, 184, 0.1);
+  }
+  
+  .subscription-form button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+  }
+  
+  .subscription-form button:hover {
+    background-color: var(--accent-color-dark);
+  }
+  
+  .subscription-message {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    display: none;
+    max-width: 500px;
+  }
+  
+  .subscription-message.visible {
+    display: block;
+  }
+  
+  .subscription-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+  }
+  
+  .subscription-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+  }
+  
+  /* Post-specific subscription form (applies different styling for blog posts) */
+  .post .subscription-form {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eaeaea;
+    padding: 1.75rem;
+    margin: 2rem 0;
+  }
+  
 // responsive
 @media (max-width: 768px) {
     body {
@@ -802,12 +827,15 @@ color: #721c24;
         gap: 1rem;
     }
 
-    #subscription-form {
+    .subscription-form form {
         flex-direction: column;
-        align-items: stretch;
-    }
+      }
       
-      #email-input {
+      .subscription-form input[type="email"] {
         width: 100%;
-    }
+      }
+      
+      .subscription-form button {
+        width: 100%;
+      }
 }

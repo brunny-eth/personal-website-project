@@ -1,0 +1,11 @@
+{
+    "name": "brunny-eth-personal-website-project",
+    "version": "1.0.0",
+    "description": "Personal website with Jekyll and API endpoints",
+    "dependencies": {
+      "mongodb": "^5.0.0"
+    },
+    "engines": {
+      "node": ">=14.x"
+    }
+  }

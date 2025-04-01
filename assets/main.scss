@@ -189,7 +189,7 @@ main {
     width: 100%;
     height: 1px;
     background-color: #e0e0e0;
-    margin: 0 0 3rem; 
+    margin: 2rem 0; 
 }
 
 .post-list {
@@ -509,7 +509,7 @@ footer {
 
 
 .subscription-container {
-    margin: 2rem 0;
+    margin: 1.5rem 0 2.5rem;
     padding: 0;
     border: none;
 }
@@ -520,9 +520,9 @@ footer {
     margin: 0;
 }
 
-.subscription-area h3 {
+.subscription-form h3 {
     font-size: 1.3rem;
-    margin: 0 0 0.75rem 0;
+    margin-bottom: 1rem;
     color: var(--header-color);
     font-weight: 600;
   }

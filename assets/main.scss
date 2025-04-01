@@ -520,11 +520,12 @@ footer {
     margin: 0;
 }
 
-.subscription-form h3 {
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    color: #555;
-}
+.subscription-area h3 {
+    font-size: 1.3rem;
+    margin: 0 0 0.75rem 0;
+    color: var(--header-color);
+    font-weight: 600;
+  }
 
 .subscription-form p {
     display: none; /* Hide the description text */

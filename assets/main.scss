@@ -178,11 +178,18 @@ main {
 
 // blog posts
 .page-intro {
-    margin: 0 0 3rem;  
+    margin: 0 0 0;  
     padding-bottom: 2rem; 
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: none;
     font-size: 1.1em;
     max-width: 38em;
+}
+
+.page-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 0 0 3rem; 
 }
 
 .post-list {
@@ -500,68 +507,54 @@ footer {
     font-size: 0.95rem;
 }
 
-/* Container for subscription form with proper boundaries */
+
 .subscription-container {
-    margin: 2.5rem 0;
+    margin: 2rem 0;
     padding: 0;
-    position: relative;
-    border-top: 1px solid #e0e0e0;
-    border-bottom: 1px solid #e0e0e0;
-  }
-  
-  /* Subscription form styling */
-  .subscription-form {
-    background-color: white;
-    padding: 2rem 0;
+    border: none;
+}
+
+.subscription-form {
+    background-color: transparent;
+    padding: 0;
     margin: 0;
-  }
-  
-  .subscription-form h3 {
-    font-size: 1.3rem;
-    margin: 0 0 0.5rem 0;
-    color: var(--header-color);
-  }
-  
-  .subscription-form p {
-    margin: 0 0 1.25rem 0;
-    font-size: 0.95rem;
-    color: #666;
-  }
-  
-  .subscription-form form {
+}
+
+.subscription-form h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.subscription-form p {
+    display: none; /* Hide the description text */
+}
+
+.subscription-form form {
     display: flex;
-    gap: 0.75rem;
-    max-width: 500px;
-  }
-  
-  .subscription-form input[type="email"] {
+    gap: 0.5rem;
+    max-width: 100%;
+    margin: 0;
+}
+
+.subscription-form input[type="email"] {
     flex: 1;
-    padding: 0.75rem 1rem;
+    padding: 0.5rem 0.75rem;
     border: 1px solid #e0e0e0;
     border-radius: 4px;
-    font-size: 0.95rem;
-    color: var(--text-color);
-    transition: border-color 0.2s, box-shadow 0.2s;
-  }
-  
-  .subscription-form input[type="email"]:focus {
-    outline: none;
-    border-color: var(--accent-color);
-    box-shadow: 0 0 0 3px rgba(23, 162, 184, 0.1);
-  }
-  
-  .subscription-form button {
-    background-color: var(--accent-color);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 0.75rem 1.5rem;
-    font-size: 0.95rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    white-space: nowrap;
-  }
+    font-size: 0.9rem;
+}
+
+.subscription-form input[type="email"]:focus {
+outline: none;
+border-color: var(--accent-color);
+box-shadow: 0 0 0 3px rgba(23, 162, 184, 0.1);
+}
+
+.subscription-form button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
   
   .subscription-form button:hover {
     background-color: var(--accent-color-dark);
@@ -783,6 +776,7 @@ footer {
         background-color: var(--accent-color); 
         color: white;
         padding-left: 25px; 
+        font-weight: 600;
     }
     
     /* Remove X transformation from hamburger */
